@@ -1,0 +1,26 @@
+.top-bar {
+	padding-top: 8px;
+	text-align: right;
+}
+.nav li {
+	list-style-type: none;
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 20px;
+	font-family: "Courier New";
+	letter-spacing: 0.5px;
+}
+
+.nav a {
+	text-decoration:none;
+}
+
+.nav a:visited {
+	color: white;
+}
+
+.nav a:hover {
+	color:#7d85f2;
+}
+

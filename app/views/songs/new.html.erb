@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<body id="song-form">
+		<div class="song"><br/><br/>
+			<h2> Add a New Song to the Stream! </h2><br/><br/>
+
+			<%= form_tag create_song_path, :class=>"song-form" do %>
+				<%= label_tag(:song_name, "Song Name: ") %>
+				<%= text_field_tag(:song_name)%><br/><br/>
+				<%= label_tag(:artist_name, "Artist Name: ") %>
+				<%= text_field_tag(:artist_name) %><br/><br/>
+				<%= submit_tag("Add Song!") %>
+			<% end %>
+		</div>
+	</body>
+</html>

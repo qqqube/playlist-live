@@ -1,0 +1,64 @@
+
+#user-page {
+	background-color:black;
+}
+
+.user-page h1 {
+	color: white;
+	text-align: center;
+	font-family: "Courier New";
+	font-size: 28px;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid white; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .16em; /* Adjust as needed */
+
+
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret 3.5s steps(30, end);
+	
+}
+
+.treble {
+	display: block;
+    margin-left: 39.016747382947%;
+    margin-right: auto;
+	width: 50%;
+
+}
+
+.treble img {
+	width: 280px;
+	height:200px;
+	
+}
+
+.buttons {
+	text-align: center;
+}
+
+.user-page a {
+	color: white;
+	text-decoration: none;
+	font-family: "Courier New";
+	font-size: 18px;
+
+}
+.user-page a:visited {
+	color: white;
+}
+.user-page a:hover {
+	color: #7d85f2;
+}
+
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: white; }
+}

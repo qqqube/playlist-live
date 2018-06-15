@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<body id="user-page">
+		<div class="user-page">
+			<br/><br/><br/>
+			<h1> <%=@user.first_name if @user.first_name%> 's Playlist Page </h1>
+			<div class="buttons">
+				<br/><br/><br/><br/><br/>
+				<p1><a><%= link_to "Create New Playlist", new_playlist_path(manager_id: @user.id) %></a> </p1><br/><br/><br/>
+				<p2><a><%= link_to "Join Playlist", new_join_path(user_id: @user.id) %></a> </p2><br/><br/><br/>
+			</div>
+			<div class="treble">
+				<%=image_tag("treble.jpg")%>
+			</div>
+
+		</div>
+	</body>
+</html>
+
+
+
+

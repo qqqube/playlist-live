@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<body id="playlist-page">
+		<div class="vid-page"><br/><br/>
+			<h1> Playlist: <%= @playlist.join_name %> </h1>
+
+
+			<li><a><%= link_to "Add Song", new_song_path(playlist_id: @playlist.id, user_id: $user.id) %></a></li>
+			<% if $isAdmin %>
+				<br/><li><a><%= link_to "Remove Song", remove_song_path(playlist_id: @playlist.id, user_id: $user.id) %></a></li>
+			<% end %><br/><br/><br/>
+
+			<% @playlist.songs.each do |s| %>
+				<iframe src="http://www.youtube.com/embed/<%=s.videoID %>" allowfullscreen></iframe>
+				<p> Song Name: <%= s.song_name if s.song_name %> </p>
+				<p> Artist Name: <%= s.artist_name if s.artist_name %> </p>
+				
+			<%end%>
+		</div>
+	</body>
+</html>
+
+
+

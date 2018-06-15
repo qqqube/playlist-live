@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<body id="playlist-form">
+		<div class = "playlist"><br/><br/><br/>
+			<h2> Create a New Playlist </h2><br/><br/>
+				<%= form_for @playlist, url: create_playlist_path(manager_id: @playlist.manager_id), :html => {:class => 'form'} do |f|%>
+					<p1> Join Name: </p1> <p2> <%= f.text_field :join_name %> </p2><br /><br/>
+					 <p3>Join Password: </p3><p4> <%= f.text_field :join_password %> </p4><br /><br/><br/>
+					<%= f.submit %>
+				<% end %>
+		</div>
+	</body>
+</html>

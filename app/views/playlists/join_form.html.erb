@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<body id="playlist-form">
+		<div class="playlist"><br/><br/><br/>
+			<h2>Join a Live Playlist! </h2><br/><br/>
+
+			<%= form_tag grant_access_path, :class => 'form' do %>
+				<%= label_tag(:join_name, "Join Name: ") %>
+				<%= text_field_tag(:join_name)%><br/><br/>
+				<%= label_tag(:join_password, "Join Password: ") %>
+				<%= password_field_tag(:join_password) %><br/><br/><br/>
+				<%= submit_tag("Join Playlist!") %>
+			<% end %>
+		</div>
+	</body>
+</html>
